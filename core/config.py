@@ -5,14 +5,13 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # API Keys
-HUGGINGFACE_TOKEN = os.getenv("HUGGINGFACEHUB_API_TOKEN")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY") 
 SERPAPI_KEY = os.getenv("SERPAPI_API_KEY")
 LANGCHAIN_API_KEY = os.getenv("LANGCHAIN_API_KEY")
 
 # DEV MODE SWITCH
-# Set to True to save API credits while testing UI
-# Set to False for the final presentation
+# Set to False to use Real Gemini + SerpAPI
 USE_MOCK_DATA = False 
 
-if not HUGGINGFACE_TOKEN:
-    raise ValueError("Missing Hugging Face Token! Check .env file.")
+if not GOOGLE_API_KEY:
+    raise ValueError("Missing Google API Key! Please add GOOGLE_API_KEY to your .env file.")
