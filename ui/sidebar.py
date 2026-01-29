@@ -17,8 +17,9 @@ def render_sidebar():
     st.sidebar.divider()
     st.sidebar.markdown("### About")
     st.sidebar.info(
-        "This AI Assistant compares prices across Amazon, Flipkart, "
-        "and others to find you the best deal."
+       " An intelligent AI assistant that tracks and compares prices across," 
+      " multiple e-commerce platforms "
+       
     )
     
     return query, search_btn
