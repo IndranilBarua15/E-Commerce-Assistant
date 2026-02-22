@@ -1,0 +1,13 @@
+streamlit
+requests
+python-dotenv
+langchain
+langchain-community
+langchain-google-genai
+langsmith
+bcrypt
+groq
+streamlit-lottie
+
+
+
